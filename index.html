@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>anu</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            background-image: url(img/wallp.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex; /* Mengaktifkan Flexbox pada body */
+            justify-content: center; /* Memusatkan secara horizontal */
+            align-items: center; /* Memusatkan secara vertikal */
+            min-height: 100vh; /* Tinggi minimal body sama dengan tinggi viewport */
+        }
+
+        section {
+            background-color: #ffffff;
+            width: 80%;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative; /* Menjadikan section sebagai referensi untuk posisi absolut */
+            border-radius: 25px;
+        }
+
+        .slide {
+            display: none; /* Semua slide disembunyikan */
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .slide.active {
+            display: flex; /* Menampilkan slide yang memiliki kelas 'active' */
+        }
+
+        .next {
+            position: absolute; /* Menggunakan posisi absolut untuk tombol */
+            right: 20px; /* Jarak dari kanan */
+            bottom: 20px; /* Jarak dari bawah */
+            padding: 10px 15px;
+            border: none;
+            border-radius: 7px;
+            background-color: #8dccf3;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="slide active" id="slide-1">
+            <h1>masak air biar mateng,<br>assalamualaikum gantengg</h1>
+            <button class="next">></button>
+        </div>
+        <div class="slide" id="slide-2">
+            <h2>jadi tujuan aku di web yang kali ini itu karna mau say something to you hehe</h2>
+            <img src="img/pat.jpeg" alt="" style="width: 200px;" height="210px">
+            <p>dibaca pelan-pelan aja ya sayangg</p>
+            <button class="next">></button>
+        </div>
+        <div class="slide" id="slide-3">
+            <p>halaw kamu masih semangat kann untuk semuanya aku harap iyaa dan selaluu.
+                <br>sedikit pesann dari akuu semangat terus ya sayangg aku tau kamu bisa lewatinnya karena sesungguhnya masalah itu pasti berlalu, berlalu lalang hehe wkkwkwk. 
+                aku gatau ya kamu udah bosen atau udh biasa aja denger kata-kata kek gitu soalnya aku gitu hehe tapi kamu jangan sampe yahh. 
+                jangan lupa buat selalu jaga kesehatan, selalu hati-hati kalau lagi ngerjain sesuatu, hati-hati sama barang bawaan, jangan lupa buat berkabar sama orang rumah, aku juga kabarin hehe. 
+                eumm aku tau pasti kamu ada rasa capenya di tambah aku yang mungkin keliatan jadi agak cuek yahh hehe maaf yaa nanti aku ceritain di akhir kenapa nya. 
+                hmm ga bosen aku buat bilang kalau aku selalu nungguin kamu sampe hal itu kelar aku gatau detailnya dan ga berharap tau karna itu hal pribadi kamu yang ga harus aku tau 
+                yang dimana aku cukup buat sekedar tau aja. semangatt terus ya sayangg lopyuu. <br>
+            </p><br>
+            <img src="img/3.png" alt="" style="width: 200px; height: 210px;">
+            <button class="next">></button>
+        </div>
+        <div class="slide" id="slide-4">
+            <h2>jangan capek yaa bacanya soalnya masih aga banyak lagi hehe</h2>
+            <button class="next">></button>
+        </div>
+        <div class="slide" id="slide-5">
+            <p>kangen kangen kangen kangen kangen kangen kangen kangen kangen 
+                kangen kangen kangen kangen kangen kangen kangen kangen 
+                kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen 
+                kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen 
+                kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen 
+                kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen 
+                kangen kangen kangen kangen kangen kangen kangen kangen 
+                kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen 
+                kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen 
+                kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen 
+                kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen 
+                kangen kangen kangen kangen kangen kangen kangen kangen 
+                kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen 
+                kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen 
+                kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen 
+                kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen 
+                kangen kangen kangen kangen kangen kangen kangen kangen 
+                kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen 
+                kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen 
+                kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen 
+                kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen 
+                kangen kangen kangen kangen kangen kangen kangen kangen 
+                kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen 
+                kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen 
+                kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen 
+                kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen 
+                kangen kangen kangen kangen kangen kangen kangen kangen 
+                kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen 
+                kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen 
+                kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen 
+                kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen 
+                kangen kangen kangen kangen kangen kangen kangen kangen 
+                kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen 
+                kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen 
+                kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen 
+                kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen 
+                kangen kangen kangen kangen kangen kangen kangen kangen 
+                kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen 
+                kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen 
+                kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen 
+                kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen 
+                kangen kangen kangen kangen kangen kangen kangen kangen 
+                kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen 
+                kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen 
+                kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen 
+                kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen 
+                kangen kangen kangen kangen kangen kangen kangen kangen 
+                kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen 
+                kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen 
+                kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen 
+                kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen 
+                kangen kangen kangen kangen kangen kangen kangen kangen 
+                kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen 
+                kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen 
+                kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen 
+                kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen kangen :(</p><br>
+                <h1>HEHEHE</h1>
+            <button class="next">></button>
+        </div>
+        <div class="slide" id="slide-6">
+            <h3>wkwk cuma mau menyampaikan hal yang gabisa aku bilang di cht karna gengsi</h3>
+            <button class="next">></button>
+        </div>
+        <div class="slide" id="slide-7">
+            <p>okehh jadii lagi itu aku abis urus resign tuh sebernya aku takut banget aku kaget dapet perlakuan kek gitu 
+            dan sebenernya mau banget langsung ketemu kamu tapi lagi itu posisi kamu baru pulang kan aku gamau ganggu istirahat kamu 
+            dan yap aku nangis dari pulang makanya sempet ke alfa dulu aga lama itu aku mau supaya tenang di luar biar di rumah ga perlu nangis diem-diem wkwk 
+            hari itu aku bener-bener berharap banget buat ketemu kamu karna rasanya ga lega belum plong rasanya bahkan sampe sekarang aku masi ngerasa ganjel sama hari itu 
+            trus semenjak itu maaf banget aku jadi ngerasa kek ya udah gamau berharap ketemu lagi, maksudnya bukan udah gamau ketemu lagi tapi lebih ke rasa berharapnya buat 
+            ketemu sama kamu tu udah aku kurangin karna aku lebih sayang diri aku hehe huaa agak lega abis ngetiknya. <br>
+            kalo kamu mau tau kenapa ga bilang langsung waktu itu hmm aku masih kek syok gitu dan balik lagi gamau ganggu waktu istirahat kamu, lagi itu 
+            juga aku masih kurang fit karna baru enakan kan abis sakit lagi itu kalau kamu inget  di tambah dapet kejadian gitu yang ada aku ngomong ga jelas ke kamu ya aku gamau 
+            takut malah sama-sama marah aku gamau. <br>
+                maaf juga sebenernya waktu hari itu kamu kan ijin main dan bener-bener ninggalin aku akutu kayak kek ya allahh wkwk tapi it's okeyy hidup kamu ga tentang aku terus dan 
+                begitu juga sebaliknya. perlu di ingat kalau aku hanya menyuarakan apa yang ga bisa aku bilang scara langsung ke kamu ya bukan bermaksud nyalahin kamuu
+        </p> <br>
+            <button class="next">></button>
+        </div>
+        <div class="slide" id="slide-8">
+            <h1>okkeh next? betul ada lagi</h1>
+            <button class="next">></button>
+        </div>
+        <div class="slide" id="slide-9">
+            <p>hehe selanjutnya yang lagi itu masalah kita kemaren itu</p>
+            <p>lebih ke kenapa aku segitunya, gapapa kalau kata kamu berlebihan tapi asal kamu tau aja ya aku itu selalu mikir kalau kamu ketemu yang lebih dari aku gimana aku belum siap 
+                kalau harus pisah sama kamu hampir tiap aku ngelamun itu yang aku pikirin tapi ya aku selalu berusaha buat percaya sama kamu walau sebenernya gegara perkataan temen aku yang waktu 
+                itu reuni bilang kalau lingkungan tempat kamu itu ga jauh dari cewe yang begitu yaa aku percaya kamu aku tau kamu ga kayak gitu tapi ga menutup kemungkinan-kemungkinan bagi aku, yaa gimana 
+                si ya yang namanya ovt?? apalagi sekarang lagi ldr dan kamu ada riwayat likein cewe di tambah kemaren tetiba banget aku buka sw kamu isinya dua cewe begitu apa ga kaget awalnya di aku lag sebentar dan di waktu itu 
+                aku langsung ngerasa ketusuk banget tau gasi kek ini seriusan ya di giniin gapapa sebenernya asal kamu tu bilang soalnya aku juga tau kerjaan kamu kan kek gitu <br> wah masi sakit ternyata yahh 
+                energi aku kek kesedot banget ngetik bagian ini wkwk AKU UDAH MAAFIN KAMU KOK SERIUSAN emang mau cerita ajahh karna kamu juga kann dah minta maaf
+            </p><br>
+            <button class="next">></button>
+        </div>
+        <div class="slide" id="slide-10">
+            <h1>masi kuat ga wkwk sedikit lagi </h1><br>
+            <button class="next">></button>
+        </div>
+        <div class="slide" id="slide-11">
+            <h3>kali ini aku</h3>
+            <button class="next">></button>
+        </div>
+        <div class="slide" id="slide-12">
+            <p>tentang hal privasi pp wa, itu aku ga pernah ubah setelan udah lama banget kenapa soalnya sifat keluarga besar aku yang bikin aku priv mereka soalnya aku mau cukup tau dan yang tau-tau aja kalo untuk di medsos 
+                gitu bukannya gamau ya, tapi ya sekarang udah aku ubah gegara kemaren maaf yaa gapapa kalau masih kesel
+            </p><br>
+            <button class="next">></button>
+        </div>
+        <div class="slide" id="slide-13">
+            <h2>dikit lagi, masih ada beberapa hal </h2><br>
+            <button class="next">></button>
+        </div>
+        <div class="slide" id="slide-14">
+            <p>sebenernya hal ini maunya langsung bilangnya tapi karena gatau ya kapannya dan takut akunya malah lupa nanti yang ada tapi kayaknya gabakal wkwk</p>
+            <p>aku sempet mau logout ig kamu, kenapa? aku lagi itu liat notif kalau ada secc acc cewe konfirm permintaan folow kamu waktu aku liat kayaknya emang temen kamu aku lupa yang mana akunnya tapi aku masi inget 
+                hm gapapa sebenernya kalau kamu bilang. gapapa. gapapa. tapi kenapa ngga? gamau kalau aku bilang ga boleh? gamau ya kalau aku bilang jangan di folow? ga gabakal kok aku bakal sebisa mungkin bilang gapapa apapun hal itu 
+                kalau kamu bilang. kejadiannya udah lama sebelum aku ke majalengka tapi aku masi inget gausa tanya siapa yang mana. <br> abis kejadian itu aku langsung unfolow kamu di secc acc aku kalau kamu perhatiin wkwk dan mulai jarang banget buka ig soalnya 
+                gamau terlalu inget soalnya aku benci banget. aku yang secc ig aku gada cowo samsek aku apusin terus tiap ada yang folow bahkan temen cowo aku, secc ig aku cowo kamu doang. haha aku yang benci banget sama cowo begitu tapi aku sama kamu aku toleransi 
+                wkwkwkkwkwkwk 
+            </p>
+            <img src="img/gapapa.jpeg" alt="" style="width: 200px;" height="210px"><br>
+            <button class="next">></button>
+        </div>
+        <div class="slide" id="slide-15">
+            <h1>haa.... nguras energi banget yak ngetiknya wkwkwk</h1>
+            <p>maaf yaa maaf banget</p><br>
+            <button class="next">></button>
+        </div>
+        <div class="slide" id="slide-16">
+            <p>pengen nangis banget ngetiknya karna sakit jugak ya kalau di inget semuaa taapiii</p>
+            <img src="img/Queen never cry.jpeg" alt="" style="width: 200px;" height="210px">
+            <button class="next">></button>
+        </div>
+        <div class="slide" id="slide-17">
+            <p>ayu ketika melihat aku tantrum ga jelas di kamer</p>
+            <img src="img/komunikasi.jpeg" alt="" style="width: 200px;" height="210px">
+            <button class="next">></button>
+        </div>
+        <div class="slide" id="slide-18">
+            <p>yang sebenarnya ketika... tapi aslinya emosi sambil nahan nangis awokawok</p>
+            <img src="img/spons.jpeg" alt="" style="width: 200px;" height="210px">
+            <button class="next">></button>
+        </div>
+        <div class="slide" id="slide-19">
+            <p>awas aja yaa kamu aku mencium bau-bau yang melibatkan cewe lagi</p>
+            <img src="img/kocheng.jpeg" alt="" style="width: 200px;" height="210px">
+            <p>boong ding jangan dong aku ga sekuat itu plss</p>
+            <img src="img/2.png" alt="" style="width: 200px;" height="210px">
+            <button class="next">></button>
+        </div>
+        <div class="slide" id="slide-20">
+            <h1>okayy terakhir</h1>
+            <button class="next">></button>
+        </div>
+        <div class="slide" id="slide-21">
+            <p>last but not least, makasih yaa sayangg selalu sabar sama sifat akuu selalu nurunin ego kamu intinya makasih atas semuanya sehat-sehat yaa maaff kalo aku banyak kurangnyaa maaf kalau ga kayak pacar-pacar temen kamu maaf yaaaa</p><br>
+            <img src="img/ikan sepat.jpeg" alt="" style="width: 200px;" height="210px">
+            <button class="next">></button>
+        </div>
+    </section>
+    
+    <script>
+        let slides = document.querySelectorAll('.slide'); 
+        let currentSlide = 0; 
+        let nextButtons = document.querySelectorAll('.next');
+
+        nextButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                slides[currentSlide].classList.remove('active');
+                
+                currentSlide = (currentSlide + 1) % slides.length; 
+                slides[currentSlide].classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
